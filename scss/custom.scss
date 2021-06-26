@@ -1,0 +1,108 @@
+// Font Family
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+$font-family-sans-serif: "Inter", sans-serif;
+
+// Variables
+$primary: #4f12d1;
+$secondary: #f9f9f2;
+$light: #ffffff;
+$info: #5f2dcf;
+$navbar-nav-link-padding-x: 1rem;
+$navbar-padding-y: 0.9rem;
+
+// Main Styling
+body,
+html {
+  scroll-behavior: smooth;
+  font-family: $font-family-sans-serif;
+}
+
+.navbar-light .navbar-toggler {
+  border-color: rgba(0, 0, 0, 0) !important;
+}
+
+.nav-link {
+  color: #000 !important;
+  font-weight: 500 !important;
+}
+
+.nav-link-hover {
+  &:hover {
+    color: $primary !important;
+  }
+}
+
+.view-example {
+  transition: 0.3s !important;
+  &:hover {
+    color: #000 !important;
+  }
+}
+
+.nav-item {
+  &:hover {
+    color: #4f12d1 !important;
+  }
+}
+
+.nav-cta {
+  font-weight: 500 !important;
+}
+
+.rated {
+  color: #000 !important;
+  font-weight: 500 !important;
+}
+
+.why-section {
+  min-height: 75vh !important;
+}
+
+.dvs-cta {
+  &:hover {
+    background: $primary !important;
+    color: $light !important;
+  }
+}
+
+.card-subtitle {
+  color: #000 !important;
+  font-weight: 500 !important;
+}
+
+.testimonial-btn {
+  &:hover {
+    background: $primary !important;
+    color: $light !important;
+  }
+}
+
+footer {
+  li a {
+    &:hover {
+      color: $primary !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hero-cta {
+    width: 100% !important;
+    padding-left: 0.7rem !important;
+    padding-right: 0.7rem !important;
+    a {
+      width: 100% !important;
+    }
+  }
+  .diversify-cta {
+    width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    a {
+      width: 100% !important;
+    }
+  }
+}
+
+// Import Sass Files
+@import "../node_modules/bootstrap/scss/bootstrap";
